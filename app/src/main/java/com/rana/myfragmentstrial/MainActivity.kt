@@ -1,5 +1,6 @@
 package com.rana.myfragmentstrial
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -16,24 +17,13 @@ class MainActivity : AppCompatActivity() {
         val thirdFragment = ThirdFragment()
 
 
-      supportFragmentManager.beginTransaction().add(R.id.mainActivity_Layout, firstFragment).commit()
+     // supportFragmentManager.beginTransaction().add(R.id.mainActivity_Layout, firstFragment).commit()
+        supportFragmentManager.beginTransaction().
+            replace(R.id.nav_cont, FirstFragment()).commit()
 
-               val button1 : Button
-               button1 = findViewById(R.id.btnFirst)
-               button1.setOnClickListener{
-               supportFragmentManager.beginTransaction().add(R.id.mainActivity_Layout, firstFragment).commit()
 
-                   val button2 : Button
-                   button2 = findViewById(R.id.btnSecond)
-                   button2.setOnClickListener{
-                       supportFragmentManager.beginTransaction().add(R.id.mainActivity_Layout, secondFragment).commit()
-                   }
 
-                   val button3 : Button
-                   button3 = findViewById(R.id.btnThird)
-                   button3.setOnClickListener{
-                       supportFragmentManager.beginTransaction().add(R.id.mainActivity_Layout, thirdFragment).commit()
-                   }
+
 
                }
-} }
+ }

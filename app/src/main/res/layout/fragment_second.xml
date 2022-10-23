@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/secondFrag_Id"
     tools:context=".SecondFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -16,7 +17,7 @@
         android:text="Hello in the Second Fragment" />
 
     <Button
-        android:id="@+id/fragOne_Bt"
+        android:id="@+id/fragtwo_Bt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
