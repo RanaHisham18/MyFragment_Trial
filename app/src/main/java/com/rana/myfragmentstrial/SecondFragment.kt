@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.rana.myfragmentstrial
 
 import android.os.Bundle
@@ -17,10 +19,10 @@ class SecondFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view =  inflater.inflate(R.layout.fragment_second, container, false)
-        val nav3_btn: Button = view.findViewById(R.id.fragOne_Bt)
+        val nav3_btn: Button = view.findViewById(R.id.fragtwo_Bt)
         nav3_btn.setOnClickListener {
 
-            val fragment = SecondFragment()
+            val fragment = ThirdFragment()
             val action = fragmentManager?.beginTransaction()
             action?.replace(R.id.nav_cont, fragment)?.commit() }
         return view

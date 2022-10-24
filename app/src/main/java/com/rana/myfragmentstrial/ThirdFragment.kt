@@ -6,8 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.navigation.fragment.findNavController
 
 
+@Suppress("DEPRECATION")
 class ThirdFragment : Fragment() {
 
 
@@ -18,13 +20,12 @@ class ThirdFragment : Fragment() {
         // Inflate the layout for this fragment
        val view3 = inflater.inflate(R.layout.fragment_third, container, false)
 
-        val nav3_btn: Button = view3.findViewById(R.id.fragOne_Bt)
-        nav3_btn.setOnClickListener {
-
-            val fragment = ThirdFragment()
-            val action = fragmentManager?.beginTransaction()
-            action?.replace(R.id.nav_cont, fragment)?.commit() }
-        return view3
+//        val nav3_btn: Button = view3.findViewById(R.id.fragOne_Bt)
+//        nav3_btn.setOnClickListener {
+//            val fragment = ThirdFragment()
+//            val action = fragmentManager?.beginTransaction()
+//            action?.replace(R.id.nav_cont, fragment)?.commit() }
+          return view3
     }
 
 
